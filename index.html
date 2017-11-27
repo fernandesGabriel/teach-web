@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="pt">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Internet em pauta | Desmistificando o desenvolvimento de websites</title>
+		<meta name="author" content="Gabriel Agusto Fernandes">
+		<meta name="description" content="Desmsitificando o desenvolvimento de websites">
+
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+
+		<link rel="stylesheet" href="styles/app.css">
+	</head>
+
+	<body>
+
+		<div id="wrapper">
+			
+			<header>
+				<h1 class="title"> Internet em pauta</h1>
+				<h3 class="subtitle">  Desmistificando o desenvolvimento de websites </h3>
+			</header>
+
+			<hr>
+
+			<section>
+				<h1 class="title"> Elementos e Atributos HTML </h1>
+			</section>
+
+			<section>
+				<h2 class="subtitle"> Documento HTML </h2>
+<pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt; 
+   &lt;head&gt; 
+      &lt;title&gt; Que tal esse texto colorido ? &lt;/title&gt; 
+   &lt;/head&gt;
+   &lt;body&gt; 
+      Conteúdo da página 
+   &lt;/body&gt; 
+&lt;/html&gt;
+</pre>
+			</section>
+
+			<section>
+				<h2 class="subtitle"> Texto </h2>
+
+<pre>
+&lt;h1&gt; Texto bem bem grande &lt;/h1&gt; 
+&lt;h2&gt; Texto bem grande &lt;/h2&gt; 
+&lt;h3&gt; Texto grande &lt;/h3&gt; 
+&lt;p&gt; parágrafo de um texto &lt;/p&gt; 
+Primeira linha &lt;br &gt; Segunda linha
+</pre>
+			</section>
+
+			<section>
+				<h2 class="subtitle"> Links / Imagens / Blocos </h2>
+
+<pre>
+&lt;a href ="pagina.html"&gt; Link &lt;/a&gt; 
+&lt;img src ="olar.jpg" &gt;
+&lt;div&gt; Conteúdo &lt;/div&gt;
+</pre>
+			</section>
+
+			<section>
+				<h2 class="subtitle"> Listas </h2>
+
+<pre>
+&lt;ul&gt;
+   &lt;li&gt; Ponto &lt;/li&gt; 
+   &lt;li&gt; Ponto &lt;/li&gt; 
+   &lt;li&gt; Ponto &lt;/li&gt; 
+&lt;/ul&gt;
+
+&lt;ol&gt;
+   &lt;li&gt; Primeiro &lt;/li&gt; 
+   &lt;li&gt; Segundo &lt;/li&gt; 
+   &lt;li&gt; Terceiro &lt;/li&gt; 
+&lt;/ol&gt;
+</pre>
+			</section>
+
+			<section>
+				<h2 class="subtitle"> Tabela </h2>
+
+<pre>
+&lt;table&gt;
+   &lt;tr&gt;
+      &lt;td&gt; Primeira linha , primeira coluna &lt;/td&gt; 
+      &lt;td&gt; Primeira linha , segunda coluna &lt;/td&gt; 
+   &lt;/tr&gt;
+   &lt;tr&gt;
+      &lt;td&gt; Segunda linha , primeira coluna &lt;/td&gt; 
+      &lt;td&gt; Segunda linha , segunda coluna &lt;/td&gt; 
+   &lt;/tr&gt;
+&lt;/table&gt;
+</pre>
+			</section>
+
+			<section>
+				<h2 class="subtitle"> Formulário </h2>
+<pre>
+&lt;form action="pagina_destino.html"&gt;
+   &lt;input type="text" name="email"&gt;
+   &lt;textarea name="descricao"&gt; &lt;/textarea &gt;
+   &lt;input type="password" name="senha"&gt;
+   &lt;button type="submit"&gt; Enviar &lt;/button&gt; 
+&lt;/form&gt;
+</pre>
+			</section>
+
+			<section>
+				<h2 class="subtitle"> Atributos HTML </h2>
+<pre>
+&lt;div id="menu"&gt; ... &lt;/div&gt; 
+
+&lt;h1 class="titulo"&gt; ... &lt;/h1&gt;
+
+&lt;div class="artigo"&gt; ... &lt;/div&gt;
+
+&lt;div class="artigo destaque"&gt; ... &lt;/div&gt;
+
+&lt;a href ="pagina.html" &gt; Link &lt;/a&gt; 
+
+&lt;img src ="olar.jpg" alt="Um olar bem grande"&gt;
+</pre>
+			</section>
+
+			<hr>
+
+			<section>
+				<h1 class="title"> Seletores e propriedades CSS </h1>
+			</section>
+
+			<section>
+				<h2 class="subtitle"> Por elementos </h2>
+<pre>
+table {}
+h1, h2 {} 
+</pre>
+			</section>
+
+			<section>
+				<h2 class="subtitle"> Por identificador </h2>
+<pre>
+#menu {} 
+</pre>
+			</section>
+
+			<section>				
+				<h2 class="subtitle"> Por classe </h2>
+<pre>
+.titulo {} 
+h1 .titulo {} 
+.artigo p {} 
+.artigo .destaque {} 
+</pre>
+			</section>
+
+			<section>				
+				<h2 class="subtitle"> Por ação </h2>
+<pre>
+a:hover {}
+</pre>
+			</section>
+
+			<section>				
+				<h2 class="subtitle"> Propriedades de tipografia </h2>
+<pre>
+.titulo {
+   font-family: Arial;
+   font-size: 16px;
+   text-align: center;
+   color: #F00;
+}
+h1.titulo {
+   font-weight: bold ;
+}
+</pre>
+			</section>
+
+			<section>				
+				<h2 class="subtitle"> Propriedades tamanho e cores de caixa </h2>
+<pre>
+#menu {
+   width: 100%;
+   height: 80 x;
+}
+a:hover {
+   background-color: #EEE ;
+}
+</pre>
+			</section>
+
+			<section>				
+				<h2 class="subtitle"> Propriedades de espaçamento </h2>
+<pre>
+h1, h2 {
+   margin-top: 10px;
+   margin-bottom: 10px;
+}
+.artigo .destaque {
+   padding: 20px;
+}
+</pre>
+			</section>
+			
+			<footer>
+				Por: Gabriel Fernandes
+			</footer>			
+
+		</div>
+
+	</body>
+
+</html>
